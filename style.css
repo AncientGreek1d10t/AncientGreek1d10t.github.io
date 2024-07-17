@@ -1,0 +1,210 @@
+@font-face {
+    font-family: "Neoneon", sans-serif;
+    src: url(Neoneon.otf);
+}
+
+@font-face {
+    font-family: "Chakra Petch", sans-serif;
+    src: url(ChakraPetch-Regular.ttf);
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+header, body {
+    margin: 0;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #0C1126;
+    color: #FFFFFF;
+}
+
+h1, h2, h3 {
+    font-family: "Neoneon", sans-serif;
+}
+
+h4, h5, h6, p, a, li { 
+    font-family: "Chakra Petch", sans-serif;
+}
+
+h1, h2 {
+    color: #5271FF;
+    text-shadow: 1px 1px 10px #5271FF;
+}
+
+h3, h4, h5, h6, p, a, li {
+    color: #FFFFFF;
+}
+
+h3 {
+    text-shadow: 1px 1px 10px #FFFFFF;
+}
+
+h1 {
+    font-size: 2.5em;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2.1em;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 2.1em;
+    line-height: 1.2;
+    margin: 0;
+}
+
+h4 {
+    font-size: 1.5em;
+    line-height: 1.4;
+}
+
+h5 {
+    font-size: 1.25em;
+    line-height: 1.5;
+}
+
+p, li {
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: left;
+}
+
+p {
+    padding-right: 5%;
+}
+
+a:hover {
+    text-decoration-color: #5271FF;
+}
+
+.background {
+    background-color: #04060D;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.flex-container {
+    display: grid;
+    max-width: 1236px;
+    padding-bottom: 5%;
+}
+
+.single {
+    grid-template-columns: 1fr;
+}
+
+.double {
+    grid-template-columns: 1fr 1fr;
+}
+
+.triple {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.hero-image {
+    max-width: 100%;
+    max-height: 500px;
+    aspect-ratio: 9/16;
+    object-fit: cover;
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.flex-box {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner {
+    position: relative;
+    max-width: 100%;
+    transition: transform 0.15s ease-in-out;
+}
+
+.banner:hover {
+    transform: translate(0, -3%);
+}
+
+.banner h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+} 
+
+.banner-image {
+    max-width: 100%;
+    aspect-ratio: 16/9;
+    opacity: 40%;
+    object-fit: cover;
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+.banner-image:hover {
+    box-shadow: 20px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+.contacts {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .double {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 1.875em;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 1.875em;
+        line-height: 1.2;
+    }
+
+    h3 {
+        font-size: 1.6em;
+        line-height: 1.2;
+    }
+
+    h4 {
+        font-size: 1.125em;
+        line-height: 1.4;
+    }
+
+    h5 {
+        font-size: 1em;
+        line-height: 1.5;
+    }
+
+    p, li {
+        font-size: 0.875em;
+        line-height: 1.6;
+    }
+
+    .hero-image {
+        max-width: 100%;
+        max-height: 300px;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+    }
+
+    .flex-container {
+        justify-items: center;
+    }
+}
